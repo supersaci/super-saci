@@ -1,0 +1,29 @@
+{
+  "name": "Super Saci",
+  "description": "Utilidades para colorados",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "img/sci-16.png",
+    "32": "img/sci-32.png",
+    "48": "img/sci-48.png",
+    "128": "img/sci-128.png"
+  },
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://ge.globo.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_start"
+    }
+  ]
+}
