@@ -12,9 +12,7 @@
     "48": "src/img/sci-48.png",
     "128": "src/img/sci-128.png"
   },
-  "permissions": [
-    "activeTab"
-  ],
+  "permissions": [],
   "content_scripts": [
     {
       "matches": [
